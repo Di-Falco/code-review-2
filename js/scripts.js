@@ -4,30 +4,31 @@ function languageRec(q1, q2, q3, q4){
 
 function result(recommendation) {
 
-  if(recommendation < 10 || recommendation > -10){
-    $("#helloWorld").show();
-  }
-
   if(recommendation === -11){
     $(".box#scratch").slideDown("slow");
     $.fx.off = true;
   }else if(recommendation <= -6){
     $(".box#python").slideDown("slow");
+    $("#helloWorld").show();
     $.fx.off = true;
   }else if(recommendation <= -2){
     $(".box#csharp").slideDown("slow");
+    $("#helloWorld").show();
     $.fx.off = true;
   }else if(recommendation === 11){
     $(".box#brainf--k").slideDown("slow");
     $.fx.off = true;
   }else if(recommendation >= 6){
     $(".box#cplusplus").slideDown("slow");
+    $("#helloWorld").show();
     $.fx.off = true;
   }else if(recommendation >= 2){
     $(".box#javascript").slideDown("slow");
+    $("#helloWorld").show();
     $.fx.off = true;
   }else{
     $(".box#java").slideDown("slow");
+    $("#helloWorld").show();
     $.fx.off = true;
   }
 }
