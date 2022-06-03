@@ -9,24 +9,26 @@ function result(recommendation, helloWorld) {
   }
 
   if(recommendation === -11){
-    $("#scratch").show();
+    $(".box#scratch").slideDown("slow");
+    $.fx.off = true;
   }else if(recommendation <= -6){
-    $("#python").show();
-    $(".output").text(helloWorld);
+    $(".box#python").slideDown("slow");
+    $.fx.off = true;
   }else if(recommendation <= -2){
-    $("#csharp").show();
-    $(".output").text(helloWorld);
+    $(".box#csharp").slideDown("slow");
+    $.fx.off = true;
   }else if(recommendation === 11){
-    $("#brainf--k").show();
+    $(".box#brainf--k").slideDown("slow");
+    $.fx.off = true;
   }else if(recommendation >= 6){
-    $("#cplusplus").show();
-    $(".output").text(helloWorld);
+    $(".box#cplusplus").slideDown("slow");
+    $.fx.off = true;
   }else if(recommendation >= 2){
-    $("#javascript").show();
-    $(".output").text(helloWorld);
+    $(".box#javascript").slideDown("slow");
+    $.fx.off = true;
   }else{
-    $("#java").show();
-    $(".output").text(helloWorld);
+    $(".box#java").slideDown("slow");
+    $.fx.off = true;
   }
 }
   
@@ -48,5 +50,6 @@ $(document).ready(function() {
 
     result(recommendation, helloWorld);
 
+    $(".output").text(helloWorld);
   });
 });
