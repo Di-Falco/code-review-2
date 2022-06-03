@@ -15,6 +15,8 @@ $(document).ready(function() {
   
   //  $("body").css("color", favoriteColor);
 
+    $("#scratch,#python,#csharp,#brainf--k,#cplusplus,#javascript,#java").hide();
+
     if(recommendation === -11){
       $("#scratch").show();
     }else if(recommendation <= -8){
