@@ -3,16 +3,20 @@
   }
   
   $(document).ready(function() {
-    $("form#politicalTest").submit(function(event) {
+    $("form#language-recommendation").submit(function(event) {
       event.preventDefault();
-      const question1 = parseInt(("#experience").val());
+      const question1 = parseInt($("#experience").val());
       const question2 = parseInt($("input:radio[name=question2]:checked").val());
       const question3 = parseInt($("input:radio[name=question3]:checked").val());
       const question4 = parseInt($("input:radio[name=question4]:checked").val());
       const question5 = parseInt($("input:radio[name=question5]:checked").val());
+      const favoriteColor = $("#color").val();
   
       const recommendation = languageRec(question1, question2, question3, question4, question5);
    
+    //  $("body").css("color", favoriteColor);
+
+
       if(recommendation === -11){
         $("#scratch").show();
       }else if(recommendation <= -8){
