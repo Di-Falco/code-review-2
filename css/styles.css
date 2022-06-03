@@ -16,22 +16,26 @@ p {
   text-align: left;
 }
 
+img {
+  margin: auto;
+  display: block;
+}
+
 #scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java{
   display: none;
 }
 
-.block {
-  box-sizing: border-box;
-  border-width: 3px;
-  border: solid black;
+.box {
+  border: 5px solid black;
   background-color: antiquewhite;
   color: black;
   padding: 2%;
   margin: 5%;
+  box-sizing: border-box;
   font-weight: 500;
 }
 
-.block .code {
+.box .code {
   color: rgb(0, 195, 0);
   background-color: rgb(26, 37, 37);
   margin: auto;
@@ -42,10 +46,28 @@ p {
   line-height: 4px;
 }
 
+.box .footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  display: block;
+  text-align: center;
+}
+
 .radio {
+  
   text-align: left;
+}
+
+label {
+  display: block;
 }
 
 .btn {
   margin: 5%;
+  border: solid black;
+  border-width: 5px;
+  margin: auto;
+  display: block;
 }

@@ -9,12 +9,12 @@
 </head>
 <body>
 <div class="container">
-  <div class="block">
+  <div class="box">
   <h1>Programming Language Personality Test</h1>
   <p>So you want to learn to code? There are many types of programming languages and each is designed for different purposes. This webpage has some questions designed to recommend a programming language based on your responses.</p>
   <p>This website uses a proprietary technology to deliver results that are 100% accurate</p>
   </div>
-  <form class="block" id="language-recommendation">
+  <form class="box" id="language-recommendation">
   <h2>Question 1:</h2>
   <p>First, how much programming experience do you have?</p>
   <select class="form-control" id="experience">
@@ -30,26 +30,18 @@
       <input type="radio" name="question2" value="-2">
       I don't drink coffee.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question2" value="-1">
       I prefer tea, actually.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question2" value="0" checked>
       Cream and sugar.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question2" value="1">
       Black.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question2" value="2">
       Don't care, just need the caffeine, anything will do.
@@ -63,26 +55,18 @@
       <input type="radio" name="question3" value="-2">
       In the suburbs.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question3" value="-1">
       Someplace abroad, like Europe.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question3" value="0" checked>
       Right where I am is fine.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question3" value="1">
       In a big city, like New York or Tokyo.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question3" value="2">
       Someplace extremely remote, like a buddhist monastery or a lighthouse.
@@ -96,54 +80,49 @@
       <input type="radio" name="question4" value="-2">
       Streaming is great!
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question4" value="-1">
       Streaming is great, if it's free (piracy).
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question4" value="0" checked>
       I love seeing movies in a theater.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question4" value="1">
       I still have some DVDs I watch from time to time.
     </label>
-  </div>
-  <div class="radio">
     <label>
       <input type="radio" name="question4" value="2">
       BetaMax is a superior format to VHS. LaserDisc is fine too.
     </label>
   </div>
 
-  <div class="form-group block" id="colorPrompt">
+  <div class="form-group box" id="colorPrompt">
     <h2>Extra credit: Color</h2>
     <label for="color">What is your favorite color?</label>
     <input id="color" class="form-control" type="color">
   </div>
 
-  <div class="block" id="scratch">
-    <h2>Scratch</h2>
+  <div class="box" id="scratch">
+    <h2>Your programming language is:</h2>
+    <h1>Scratch</h1>
     <p>Scratch is a high-level block-based visual programming language and website aimed primarily at children as an educational tool for programming, with a target audience of ages 8 to 16.</p>
     <p>Here is an example of a "Hello World!" program in scratch:</p>
     <p><img src="https://anthsperanzadotcom.files.wordpress.com/2018/05/03.png"></p>
   </div>
 
-  <div class="block" id="python">
-    <h2>Python</h2>
+  <div class="box" id="python">
+    <h2>Your programming language is:</h2>
+    <h1>Python</h1>
     <p>Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
     <p>Here is an example of a "Hello World!" program in Python:</p>
-    <span class="code">print('Hello, world!')</span>
+    <div class="code">print('Hello, world!')</div>
   </div>
 
-  <div class="block" id="csharp">
-    <h2>C#</h2>
+  <div class="box" id="csharp">
+    <h2>Your programming language is:</h2>
+    <h1>C#</h1>
     <p>C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</p>
     <p>Here is an example of a "Hello World!" program in C#:</p>
     <div class="code">
@@ -159,8 +138,9 @@
     </div>
   </div>
 
-  <div class="block" id="brainf--k">
-    <h2>Brainf**k</h2>
+  <div class="box" id="brainf--k">
+    <h2>Your programming language is:</h2>
+    <h1>Brainf**k</h1>
     <p>Brainf**k is an esoteric programming language created in 1993 by Urban Müller. Notable for its extreme minimalism, the language consists of only eight simple commands, a data pointer, and an instruction pointer. While it is fully Turing complete, it is not intended for practical use, but to challenge and amuse programmers. Brainf**k requires one to break commands into microscopic steps.</p>
     <p>Here is an example of a "Hello World!" program in Brainf**k:</p>
     <div class="code">
@@ -179,8 +159,9 @@
     </div>
   </div>
 
-  <div class="block" id="cplusplus">
-    <h2>C++</h2>
+  <div class="box" id="cplusplus">
+    <h2>Your programming language is:</h2>
+    <h1>C++</h1>
     <p>C++ is a general-purpose programming language created as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms.</p>
     <p>Here is an example of a "Hello World!" program in C++:</p>
     <div class="code">
@@ -193,15 +174,17 @@
     </div>
   </div>
 
-  <div class="block" id="javascript">
-    <h2>JavaScript</h2>
+  <div class="box" id="javascript">
+    <h2>Your programming language is:</h2>
+    <h1>JavaScript</h1>
     <p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
     <p>Here is an example of a "Hello World!" program in JavaScript:</p>
-    <span class="code">alert("Hello, World!");</span>
+    <div class="code">alert("Hello, World!");</div>
   </div>
 
-  <div class="block" id="java">
-    <h2>Java</h2>
+  <div class="box" id="java">
+    <h2>Your programming language is:</h2>
+    <h1>Java</h1>
     <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client-server web applications, with a reported 9 million developers.</p>
     <p>Here is an example of a "Hello World!" program in Java:</p>
     <div class="code">
@@ -216,7 +199,6 @@
   <button type="submit" class="btn">What is my perfect programming language?</button>
   </form>
 </div>
-
-
+<div class="box footer"><h2>Results are 100% accurate. <em>No refunds.</em></h2></div>
 </body>
 </html>
