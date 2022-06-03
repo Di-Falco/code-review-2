@@ -5,11 +5,19 @@ body {
 h1 {
   font-size: 48px;
   text-align: center;
+  background-color: black;
+  color: antiquewhite;
+  padding: 1%;
+  border-radius: 10px;
 }
 
 h2 {
   font-size: 36px;
   text-align: center;
+  background-color: black;
+  color: antiquewhite;
+  padding: 1%;
+  border-radius: 10px;
 }
 
 p {
@@ -27,6 +35,7 @@ img {
 
 .box {
   border: 5px solid black;
+  border-radius: 15px;
   background-color: antiquewhite;
   color: black;
   padding: 2%;
@@ -36,14 +45,21 @@ img {
 }
 
 .box .code {
-  color: rgb(0, 195, 0);
+  border: 5px solid rgb(159, 126, 84);
+  border-radius: 15px;
   background-color: rgb(26, 37, 37);
+  color: antiquewhite;
   margin: auto;
   padding: 3%;
   text-align: left;
   font-family: monospace;
   font-weight: bolder;
   line-height: 4px;
+}
+
+.form-control {
+  margin: 1%;
+  width: auto;
 }
 
 .radio {
@@ -73,5 +89,5 @@ label {
 }
 
 .btn:hover {
-  color: rgb(255, 191, 108);
+  color: rgb(184, 129, 78);
 }
