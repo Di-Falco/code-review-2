@@ -3,7 +3,6 @@ function languageRec(q1, q2, q3, q4){
 }
 
 function result(recommendation) {
-  if( $("radio#q2").is(":checked") ){
     if(recommendation === -11){
       $("#scratch").show();
     }else if(recommendation <= -6){
@@ -19,9 +18,6 @@ function result(recommendation) {
     }else{
       $("#java").show();
     }
-  }else{
-    alert("Please select an answer for each question");
-  }
 }
   
 $(document).ready(function() {
