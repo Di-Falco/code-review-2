@@ -9,11 +9,12 @@
 </head>
 <body>
 <div class="container">
+  <div class="block">
   <h1>Programming Language Personality Test</h1>
   <p>So you want to learn to code? There are many types of programming languages and each is designed for different purposes. This webpage has some questions designed to recommend a programming language based on your responses.</p>
   <p>This website uses a proprietary technology to deliver results that are 100% accurate</p>
-
-  <form id="language-recommendation">
+  </div>
+  <form class="block" id="language-recommendation">
   <h2>Question 1:</h2>
   <p>First, how much programming experience do you have?</p>
   <select class="form-control" id="experience">
@@ -121,48 +122,97 @@
     </label>
   </div>
 
-<!--
-  <h2>Color</h2>
-  <div class="form-group">
+  <div class="form-group block" id="colorPrompt">
+    <h2>Extra credit: Color</h2>
     <label for="color">What is your favorite color?</label>
     <input id="color" class="form-control" type="color">
   </div>
--->
 
-  <button type="submit" class="btn">What is my perfect programming language?</button>
-
-  <div id="scratch">
+  <div class="block" id="scratch">
     <h2>Scratch</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in scratch:</p>
+    <p><img src="https://anthsperanzadotcom.files.wordpress.com/2018/05/03.png"></p>
   </div>
-  <div id="python">
+
+  <div class="block" id="python">
     <h2>Python</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in Python:</p>
+    <span class="code">print('Hello, world!')</span>
   </div>
-  <div id="csharp">
+
+  <div class="block" id="csharp">
     <h2>C#</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in C#:</p>
+    <div class="code">
+    <p>namespace HelloWorld</p>
+    <p>&ensp;{</p>
+    <p>&emsp;class Hello {</p>         
+    <p>&emsp;&ensp;static void Main(string[] args)</p>
+    <p>&emsp;&ensp;{</p>
+    <p>&emsp;&emsp;System.Console.WriteLine("Hello World!");</p>
+    <p>&emsp;&ensp;}</p>
+    <p>&emsp;}</p>
+    <p>&ensp;}</p>
+    </div>
   </div>
-  <div id="brainf--k">
+
+  <div class="block" id="brainf--k">
     <h2>Brainf**k</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in Brainf**k:</p>
+    <div class="code">
+    <p>>++++++++[&lt;+++++++++>-]&lt;.</p>
+    <p>>++++[&lt;+++++++>-]&lt;+.</p>
+    <p>+++++++..</p>
+    <p>+++.</p>
+    <p>>>++++++[&lt;+++++++>-]&lt;++.</p>
+    <p>------------.</p>
+    <p>>++++++[&lt;+++++++++>-]&lt;+.</p>
+    <p>&lt;.</p>
+    <p>+++.</p>
+    <p>------.</p>
+    <p>--------.</p>
+    <p>>>>++++[&lt;++++++++>-]&lt;+.</p>
+    </div>
   </div>
-  <div id="cplusplus">
+
+  <div class="block" id="cplusplus">
     <h2>C++</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in C++:</p>
+    <div class="code">
+    <p>#include &lt;iostream></p>
+    <p></p>
+    <p>int main() {</p>
+    <p>&ensp;std::cout &lt;&lt; "Hello World!";</p>
+    <p>&ensp;return 0;</p>
+    <p>}</p>
+    </div>
   </div>
+
   <div class="block" id="javascript">
     <h2>JavaScript</h2>
     <p></p>
     <p>Here is an example of a "Hello World!" program in JavaScript:</p>
     <span class="code">alert("Hello, World!");</span>
   </div>
-  <div id="java">
+  <div class="block" id="java">
     <h2>Java</h2>
     <p></p>
+    <p>Here is an example of a "Hello World!" program in Java:</p>
+    <div class="code">
+    <p>class HelloWorld {
+    <p>&ensp;public static void main(String[] args) {</p>
+    <p>&emsp;System.out.println("Hello, World!");</p>
+    <p>&ensp;}</p>
+    <p>}</p>
+    </div>
   </div>
- 
   
+  <button type="submit" class="btn">What is my perfect programming language?</button>
   </form>
 </div>
 

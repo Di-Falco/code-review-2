@@ -1,9 +1,5 @@
-.result-box {
-  border-width: 5px;
-  border: solid black;
-  padding: 2%;
-  margin: auto;
-  height: auto;
+h1 {
+  font-size: 48px;
 }
 
 #scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java{
@@ -18,6 +14,7 @@
   padding: 2%;
   margin: 5%;
   text-align: center;
+  font-weight: 500;
 }
 
 .block .code {
@@ -26,6 +23,15 @@
   box-sizing: border-box;
   margin: auto;
   padding: 1%;
+  padding-top: 3%;
+  text-align: left;
+  font-family: monospace;
+  font-weight: bolder;
+  line-height: 4px;
+}
+
+.radio {
+  text-align: left;
 }
 
 .btn {
