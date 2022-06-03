@@ -1,5 +1,19 @@
+body {
+  background-color: black;
+}
+
 h1 {
   font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  text-align: left;
 }
 
 #scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java{
@@ -7,23 +21,21 @@ h1 {
 }
 
 .block {
+  box-sizing: border-box;
   border-width: 3px;
   border: solid black;
-  background-color:azure;
-  color:darkslateblue;
+  background-color: antiquewhite;
+  color: black;
   padding: 2%;
   margin: 5%;
-  text-align: center;
   font-weight: 500;
 }
 
 .block .code {
-  border-width: 3px;
-  border: solid darkslateblue;
-  box-sizing: border-box;
+  color: rgb(0, 195, 0);
+  background-color: rgb(26, 37, 37);
   margin: auto;
-  padding: 1%;
-  padding-top: 3%;
+  padding: 3%;
   text-align: left;
   font-family: monospace;
   font-weight: bolder;
