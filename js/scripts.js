@@ -2,22 +2,27 @@ function languageRec(q1, q2, q3, q4){
   return q1 + q2 + q3 + q4;
 }
 
-function result(recommendation) {
-    if(recommendation === -11){
-      $("#scratch").show();
-    }else if(recommendation <= -6){
-      $("#python").show();
-    }else if(recommendation <= -2){
-      $("#csharp").show();
-    }else if(recommendation === 11){
-      $("#brainf--k").show();
-    }else if(recommendation >= 6){
-      $("#cplusplus").show();
-    }else if(recommendation >= 2){
-      $("#javascript").show();
-    }else{
-      $("#java").show();
-    }
+function result(recommendation, helloWorld;) {
+  if(recommendation === -11){
+    $("#scratch").show();
+  }else if(recommendation <= -6){
+    $("#python").show();
+    $(".output").text(helloWorld);
+  }else if(recommendation <= -2){
+    $("#csharp").show();
+    (".output").text(helloWorld);
+  }else if(recommendation === 11){
+    $("#brainf--k").show();
+  }else if(recommendation >= 6){
+    $("#cplusplus").show();
+    (".output").text(helloWorld);
+  }else if(recommendation >= 2){
+    $("#javascript").show();
+    (".output").text(helloWorld);
+  }else{
+    $("#java").show();
+    (".output").text(helloWorld);
+  }
 }
   
 $(document).ready(function() {
@@ -28,6 +33,7 @@ $(document).ready(function() {
     const question3 = parseInt($("input:radio[name=question3]:checked").val());
     const question4 = parseInt($("input:radio[name=question4]:checked").val());
     const favoriteColor = $("#color").val();
+    const helloWorld = $("#helloWorldInput").val();
 
     const recommendation = languageRec(question1, question2, question3, question4);
   
@@ -35,7 +41,11 @@ $(document).ready(function() {
 
     $("#scratch,#python,#csharp,#brainf--k,#cplusplus,#javascript,#java").hide();
 
-    $(document).on("click", "#button", result(recommendation));
+    if(recommendation < 11 || recommendation > -11){
+      $("helloWorld").show();
+    }
+
+    $(document).on("click", "#button", result(recommendation, helloWorld));
 
   });
 });
