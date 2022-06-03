@@ -46,15 +46,6 @@ img {
   line-height: 4px;
 }
 
-.box .footer {
-  width: 100%;
-  margin: auto;
-  margin-top: 10px;
-  padding: 5px;
-  display: block;
-  text-align: center;
-}
-
 .radio {
   
   text-align: left;
@@ -64,10 +55,23 @@ label {
   display: block;
 }
 
+#color {
+  margin-left:30%;
+  margin-right:30%;
+  width: 40%;
+  display:block;
+}
+
 .btn {
   margin: 5%;
   border: solid black;
   border-width: 5px;
+  background: black;
+  color: antiquewhite;
   margin: auto;
   display: block;
+}
+
+.btn:hover {
+  color: rgb(255, 191, 108);
 }
