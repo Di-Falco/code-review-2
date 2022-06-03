@@ -2,9 +2,9 @@ function languageRec(q1, q2, q3, q4){
   return q1 + q2 + q3 + q4;
 }
 
-function result(recommendation, helloWorld) {
+function result(recommendation) {
 
-  if(recommendation < 11 || recommendation > -11){
+  if(recommendation < 10 || recommendation > -10){
     $("#helloWorld").show();
   }
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     $("#scratch,#python,#csharp,#brainf--k,#cplusplus,#javascript,#java").hide();
 
-    result(recommendation, helloWorld);
+    result(recommendation);
 
     $(".output").text(helloWorld);
   });
