@@ -1,5 +1,5 @@
-function languageRec(q1, q2, q3, q4, q5){
-  return q1 + q2 + q3 + q4 + q5;
+function languageRec(q1, q2, q3, q4){
+  return q1 + q2 + q3 + q4;
 }
   
 $(document).ready(function() {
@@ -9,34 +9,26 @@ $(document).ready(function() {
     const question2 = parseInt($("input:radio[name=question2]:checked").val());
     const question3 = parseInt($("input:radio[name=question3]:checked").val());
     const question4 = parseInt($("input:radio[name=question4]:checked").val());
-    const question5 = parseInt($("input:radio[name=question5]:checked").val());
-    const favoriteColor = $("#color").val();
+  //  const favoriteColor = $("#color").val();
 
-    const recommendation = languageRec(question1, question2, question3, question4, question5);
+    const recommendation = languageRec(question1, question2, question3, question4);
   
   //  $("body").css("color", favoriteColor);
 
     if(recommendation === -11){
-      $("body").removeClass();
-      $("body").addClass("scratch");
+      $("#scratch").show();
     }else if(recommendation <= -8){
-      $("body").removeClass();
-      $("body").addClass("python");
+      $("#python").show();
     }else if(recommendation <= -5){
-      $("body").removeClass();
-      $("body").addClass("csharp");
+      $("#csharp").show();
     }else if(recommendation === 11){
-      $("body").removeClass();
-      $("body").addClass("brainf--k");
+      $("#brainf--k").show();
     }else if(recommendation >= 8){
-      $("body").removeClass();
-      $("body").addClass("cplusplus");
+      $("#cplusplus").show();
     }else if(recommendation >= 5){
-      $("body").removeClass();
-      $("body").addClass("javascript");
+      $("#javascript").show();
     }else{
-      $("body").removeClass();
-      $("body").addClass("java");
+      $("#java").show();
     }
   });
 });

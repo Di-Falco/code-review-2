@@ -1,21 +1,11 @@
-.scratch{
-  display: none;
-} 
-.python{
-  display: none;
-} 
-.csharp{
-  display: none;
-} 
-.brainf--k{
-  display: none;
-} 
-.cplusplus{
-  display: none;
-} 
-.javascript{
-  display: none;
+.result-box {
+  border-width: 5px;
+  border: solid black;
+  padding: 2%;
+  margin: auto;
+  height: auto;
 }
-.java {
+
+#scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java{
   display: none;
 }
