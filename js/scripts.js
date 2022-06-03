@@ -2,7 +2,12 @@ function languageRec(q1, q2, q3, q4){
   return q1 + q2 + q3 + q4;
 }
 
-function result(recommendation, helloWorld;) {
+function result(recommendation, helloWorld) {
+
+  if(recommendation < 11 || recommendation > -11){
+    $("#helloWorld").show();
+  }
+
   if(recommendation === -11){
     $("#scratch").show();
   }else if(recommendation <= -6){
@@ -10,18 +15,18 @@ function result(recommendation, helloWorld;) {
     $(".output").text(helloWorld);
   }else if(recommendation <= -2){
     $("#csharp").show();
-    (".output").text(helloWorld);
+    $(".output").text(helloWorld);
   }else if(recommendation === 11){
     $("#brainf--k").show();
   }else if(recommendation >= 6){
     $("#cplusplus").show();
-    (".output").text(helloWorld);
+    $(".output").text(helloWorld);
   }else if(recommendation >= 2){
     $("#javascript").show();
-    (".output").text(helloWorld);
+    $(".output").text(helloWorld);
   }else{
     $("#java").show();
-    (".output").text(helloWorld);
+    $(".output").text(helloWorld);
   }
 }
   
@@ -41,11 +46,7 @@ $(document).ready(function() {
 
     $("#scratch,#python,#csharp,#brainf--k,#cplusplus,#javascript,#java").hide();
 
-    if(recommendation < 11 || recommendation > -11){
-      $("helloWorld").show();
-    }
-
-    $(document).on("click", "#button", result(recommendation, helloWorld));
+    result(recommendation, helloWorld);
 
   });
 });

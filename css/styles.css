@@ -29,7 +29,7 @@ img {
   display: block;
 }
 
-#scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java{
+#scratch, #python, #csharp, #brainf--k, #cplusplus, #javascript, #java, #helloWorld{
   display: none;
 }
 
@@ -41,7 +41,7 @@ img {
   padding: 2%;
   margin: 5%;
   box-sizing: border-box;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .box .code {
@@ -90,4 +90,8 @@ label {
 
 .btn:hover {
   color: rgb(184, 129, 78);
+}
+
+.output {
+  color:goldenrod;
 }
